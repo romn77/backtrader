@@ -142,7 +142,6 @@ class PairTradingStrategy(bt.Strategy):
             self.qty2 = y  # The new open position quantity for Stock2 is y shares
             self.status = 2  # The current status is "long the spread"
 
-
             # Step 4: Check conditions for No Trade
             # If the z-score is within the two bounds, close all
         """
@@ -259,4 +258,5 @@ def parse_args():
 
 
 if __name__ == '__main__':
+    print('Pair Trading Strategy')
     runstrategy()
